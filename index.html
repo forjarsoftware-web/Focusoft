@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Focusoft — Desarrollo de Software · Uruguay</title>
+  <meta name="description" content="Focusoft es una empresa uruguaya de desarrollo de software. Creamos productos digitales a medida, SaaS, apps y APIs. Proyectos: RestoYa, Kore y más." />
+  <link rel="icon" type="image/svg+xml" href="Focusoft-favicon.svg" />
+  <link rel="apple-touch-icon" href="assets/favicon-180.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ===== HEADER ===== -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="Focusoft inicio">
+        <img src="Focusoft-horizontal-dark.svg" alt="Focusoft" class="brand-logo" />
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#servicios">Servicios</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto" class="btn btn-primary nav-cta">Contacto</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO (dark) ===== -->
+  <section class="hero">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-blob blob-a"></div>
+    <div class="hero-blob blob-b"></div>
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <span class="pill"><span class="dot"></span> Desarrollo de software · Uruguay 🇺🇾</span>
+        <h1>Construimos el <span class="grad">software</span> que impulsa tu negocio.</h1>
+        <p class="lead">
+          Somos Focusoft: un equipo uruguayo que crea productos digitales reales.
+          Desde SaaS propios hasta sistemas, apps y APIs a medida — con foco en calidad y resultados.
+        </p>
+        <div class="hero-actions">
+          <a href="#contacto" class="btn btn-primary">Trabajemos juntos</a>
+          <a href="#proyectos" class="btn btn-ghost">Ver proyectos →</a>
+        </div>
+        <div class="hero-trust">
+          <span>Ya trabajando en</span>
+          <strong>RestoYa</strong><i>·</i><strong>Kore</strong><i>·</i><strong>APIs &amp; automatización</strong>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="brand-orb">
+          <div class="orb-ring"></div>
+          <div class="orb-ring ring2"></div>
+          <div class="orb-glow"></div>
+          <img src="Focusoft-icon-dark.svg" alt="" class="orb-icon" />
+        </div>
+        <div class="code-card">
+          <div class="cc-bar"><span></span><span></span><span></span></div>
+          <pre><code><span class="c-key">const</span> focusoft = <span class="c-fn">build</span>({
+  <span class="c-prop">foco</span>: <span class="c-bool">true</span>,
+  <span class="c-prop">stack</span>: <span class="c-str">"moderno"</span>,
+  <span class="c-prop">entrega</span>: <span class="c-str">"a tiempo"</span>
+});</code></pre>
+        </div>
+        <div class="float-card fc-1">🚀 Web en 5 días</div>
+        <div class="float-card fc-2">⚡ SaaS</div>
+        <div class="float-card fc-3">🔌 APIs</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== OFERTA DESTACADA ===== -->
+  <section class="offer-band">
+    <div class="container offer-inner">
+      <div class="offer-text">
+        <span class="offer-badge">⚡ Oferta destacada</span>
+        <h2>Tu sitio web a medida, listo en <span class="offer-num">5 días</span>.</h2>
+        <p>Diseño profesional, responsive y optimizado — sin plantillas genéricas y a un precio que te va a sorprender.</p>
+      </div>
+      <div class="offer-cta">
+        <a href="#contacto" class="btn btn-white">Quiero mi sitio →</a>
+        <span class="offer-note">Entrega express · Precio accesible</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICIOS ===== -->
+  <section class="section" id="servicios">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Qué hacemos</span>
+        <h2>Servicios</h2>
+        <p>Cubrimos todo el ciclo de vida de tu producto, desde la idea hasta el mantenimiento.</p>
+      </div>
+      <div class="grid grid-3">
+        <article class="card">
+          <div class="card-icon">&lt;/&gt;</div>
+          <h3>Desarrollo web</h3>
+          <p>Sitios y aplicaciones web modernas, rápidas y escalables con las últimas tecnologías.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">🧩</div>
+          <h3>Productos SaaS</h3>
+          <p>Plataformas propias y a medida con modelo de suscripción, listas para escalar.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">⚙️</div>
+          <h3>Software a medida</h3>
+          <p>Sistemas de gestión, ERPs y automatizaciones diseñados para tu proceso de negocio.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">🔌</div>
+          <h3>APIs &amp; integraciones</h3>
+          <p>APIs robustas y seguras que conectan tus sistemas y facilitan cada proceso.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">📱</div>
+          <h3>Landings &amp; eventos</h3>
+          <p>Landings personalizadas de alto impacto para campañas y eventos puntuales.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">🎨</div>
+          <h3>Producto &amp; UX/UI</h3>
+          <p>Diseño de interfaces claras y experiencias que tus clientes disfrutan usar.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROYECTOS ===== -->
+  <section class="section section-dark" id="proyectos">
+    <div class="container">
+      <div class="section-head light">
+        <span class="eyebrow">En qué trabajamos</span>
+        <h2>Proyectos reales</h2>
+        <p>No solo hablamos de software: lo construimos. Esto es una muestra de lo que estamos desarrollando.</p>
+      </div>
+
+      <div class="projects">
+        <!-- RestoYa -->
+        <article class="project feature">
+          <div class="project-shot">
+            <img src="assets/restoya.png" alt="RestoYa" loading="lazy" />
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span class="tag green">Producto propio</span><span class="tag">SaaS · Suscripción</span></div>
+            <h3>RestoYa</h3>
+            <p>Punto de venta inteligente para restaurantes: gestión de mesas, comandas y cobros desde cualquier dispositivo. Nuestro producto propio, que comercializamos por suscripción.</p>
+            <a href="https://restoya.app/" target="_blank" rel="noopener" class="project-link">Visitar restoya.app →</a>
+          </div>
+        </article>
+
+        <!-- Kore -->
+        <article class="project feature reverse">
+          <div class="project-shot">
+            <img src="assets/kore.png" alt="Kore" loading="lazy" />
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span class="tag blue">Gestión empresarial</span><span class="tag">Plataforma</span></div>
+            <h3>Kore</h3>
+            <p>Plataforma de gestión inteligente para empresas operativas: dashboard en tiempo real, gestión de flota y personal, y control total de la operación en un solo lugar.</p>
+            <a href="https://kore-azure-kappa.vercel.app/login" target="_blank" rel="noopener" class="project-link">Ver Kore →</a>
+          </div>
+        </article>
+
+        <!-- Small cards -->
+        <div class="grid grid-2 projects-mini">
+          <article class="project mini">
+            <div class="mini-icon">🏛️</div>
+            <div class="project-tags"><span class="tag">En curso</span></div>
+            <h3>Landings para eventos</h3>
+            <p>Desarrollamos landings personalizadas para eventos puntuales junto a entidades públicas y privadas. Proyectos en curso que anunciaremos próximamente.</p>
+          </article>
+          <article class="project mini">
+            <div class="mini-icon">🔌</div>
+            <div class="project-tags"><span class="tag">Infraestructura</span></div>
+            <h3>APIs &amp; Micromanagement</h3>
+            <p>Construimos APIs y herramientas de micromanagement para automatizar y facilitar procesos internos de nuestros clientes.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NOSOTROS ===== -->
+  <section class="section" id="nosotros">
+    <div class="container about">
+      <div class="about-visual">
+        <img src="Focusoft-icon.svg" alt="" />
+      </div>
+      <div class="about-copy">
+        <span class="eyebrow">Nosotros</span>
+        <h2>Foco. Software. Resultados.</h2>
+        <p>
+          Focusoft nace en Uruguay con una idea simple: el software bien hecho necesita
+          <strong>foco</strong>. Foco en el problema real, en la calidad del código y en las
+          personas que van a usar lo que construimos.
+        </p>
+        <ul class="checks">
+          <li>Productos propios en el mercado, no solo teoría.</li>
+          <li>Código mantenible y estándares modernos.</li>
+          <li>Compromiso con los plazos y con el resultado.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACTO ===== -->
+  <section class="section cta-section" id="contacto">
+    <div class="hero-blob blob-c"></div>
+    <div class="container cta-inner">
+      <h2>¿Tenés una idea o proyecto?</h2>
+      <p>Contanos qué necesitás y te respondemos a la brevedad.</p>
+      <div class="cta-actions">
+        <a href="mailto:hola@focusoft.uy" class="btn btn-primary">✉️ hola@focusoft.uy</a>
+        <a href="https://wa.me/598" target="_blank" rel="noopener" class="btn btn-outline light">💬 WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <img src="Focusoft-horizontal-dark.svg" alt="Focusoft" class="footer-logo" />
+      <p class="footer-tag">Desarrollo de software · Uruguay</p>
+      <div class="footer-links">
+        <a href="#servicios">Servicios</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <p class="copy">© 2026 Focusoft. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
