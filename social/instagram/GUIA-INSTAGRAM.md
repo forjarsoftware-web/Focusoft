@@ -105,6 +105,29 @@ sitios web, apps y sistemas a medida.
 
 ---
 
+## 4b. Segundo post — Carrusel "Proceso 7 días" (`carrusel-proceso/`)
+
+Subir los 6 slides **en orden** (slide-1 a slide-6) como una sola publicación carrusel.
+
+**Caption:**
+```
+¿Cuánto tarda tener tu web profesional? Con nosotros, 7 días. 🗓️
+
+Así es el proceso, día a día 👉 deslizá
+
+📌 Día 1: hablamos y te pasamos precio cerrado
+🎨 Días 2-3: diseñamos tu web a medida
+⚙️ Días 4-6: la construimos (responsive + SEO)
+🚀 Día 7: online en tu dominio, lista para vender
+
+Desde USD 700, sin sorpresas.
+📲 Cotizá gratis → link en bio
+
+#DesarrolloWeb #PáginasWeb #Uruguay #PymesUruguay #Emprendedores #DiseñoWeb #NegociosDigitales #Montevideo
+```
+
+> Publicalo 2–3 días después del post de lanzamiento. Este carrusel también sirve tal cual para una campaña de Meta Ads (formato carrusel).
+
 ## 5. Banco de hashtags
 
 Mezclar 8–12 por post, rotándolos:
