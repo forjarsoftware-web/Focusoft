@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Focusoft — Desarrollo de Software · Uruguay</title>
-  <meta name="description" content="Focusoft es una empresa uruguaya de desarrollo de software. Creamos productos digitales a medida, SaaS, apps y APIs. Proyectos: RestoYa, Kore y más." />
+  <title>Focusoft — Desarrollo de Software · Sitios web desde USD 700 · Uruguay</title>
+  <meta name="description" content="Focusoft es una empresa uruguaya de desarrollo de software. Sitios web profesionales a medida desde USD 700, listos en menos de 1 semana. También apps, SaaS y APIs." />
   <link rel="icon" type="image/svg+xml" href="Focusoft-favicon.svg" />
   <link rel="apple-touch-icon" href="assets/favicon-180.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,17 +13,17 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
   <!-- ===== HEADER ===== -->
   <header class="site-header" id="top">
     <div class="container header-inner">
-      <a href="#top" class="brand" aria-label="Focusoft inicio">
-        <img src="Focusoft-horizontal-dark.svg" alt="Focusoft" class="brand-logo" />
-      </a>
+      <a href="#top" class="brand-word" aria-label="Focusoft inicio">Focu<span>soft</span></a>
       <nav class="nav" id="nav">
+        <a href="#oferta">Oferta</a>
+        <a href="#proceso">Proceso</a>
         <a href="#servicios">Servicios</a>
         <a href="#proyectos">Proyectos</a>
-        <a href="#nosotros">Nosotros</a>
-        <a href="#contacto" class="btn btn-primary nav-cta">Contacto</a>
+        <a href="#contacto" class="btn btn-primary nav-cta">Cotizá gratis</a>
       </nav>
       <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -31,158 +31,183 @@
     </div>
   </header>
 
-  <!-- ===== HERO (dark) ===== -->
-  <section class="hero">
-    <div class="hero-grid-bg"></div>
-    <div class="hero-blob blob-a"></div>
-    <div class="hero-blob blob-b"></div>
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="hero-spot" aria-hidden="true"></div>
     <div class="container hero-inner">
       <div class="hero-copy">
-        <span class="pill"><span class="dot"></span> Desarrollo de software · Uruguay 🇺🇾</span>
-        <h1>Construimos el <span class="grad">software</span> que impulsa tu negocio.</h1>
+        <p class="mono-eyebrow">~/uy/focusoft <span class="cursor-block">▌</span> desarrollo de software</p>
+        <h1 id="heroTitle">Ponemos tu negocio <em>en foco.</em></h1>
         <p class="lead">
-          Somos Focusoft: un equipo uruguayo que crea productos digitales reales.
-          Desde SaaS propios hasta sistemas, apps y APIs a medida — con foco en calidad y resultados.
+          Somos un equipo uruguayo que construye software real: tu sitio web
+          <strong>desde USD&nbsp;700 y online en menos de 1 semana</strong> — y también SaaS, apps y APIs a medida.
         </p>
         <div class="hero-actions">
-          <a href="#contacto" class="btn btn-primary">Trabajemos juntos</a>
-          <a href="#proyectos" class="btn btn-ghost">Ver proyectos →</a>
+          <a href="https://wa.me/59894630463?text=Hola%20Focusoft%2C%20quiero%20cotizar%20mi%20sitio%20web" target="_blank" rel="noopener" class="btn btn-primary">Cotizá por WhatsApp</a>
+          <a href="#oferta" class="btn btn-ghost">Web desde USD 700 →</a>
         </div>
-        <div class="hero-trust">
-          <span>Ya trabajando en</span>
-          <strong>RestoYa</strong><i>·</i><strong>Kore</strong><i>·</i><strong>APIs &amp; automatización</strong>
-        </div>
+        <p class="hero-trust mono">ya en producción: <strong>RestoYa</strong> · <strong>Kore</strong> · APIs &amp; automatización</p>
       </div>
 
       <div class="hero-visual">
-        <div class="brand-orb">
-          <div class="orb-ring"></div>
-          <div class="orb-ring ring2"></div>
-          <div class="orb-glow"></div>
-          <img src="Focusoft-icon-dark.svg" alt="" class="orb-icon" />
+        <div class="term frame">
+          <div class="term-bar"><span></span><span></span><span></span><b class="mono">focusoft — zsh</b></div>
+          <pre class="term-body mono" id="termBody" aria-label="Terminal demostrativa"></pre>
         </div>
-        <div class="code-card">
-          <div class="cc-bar"><span></span><span></span><span></span></div>
-          <pre><code><span class="c-key">const</span> focusoft = <span class="c-fn">build</span>({
-  <span class="c-prop">foco</span>: <span class="c-bool">true</span>,
-  <span class="c-prop">stack</span>: <span class="c-str">"moderno"</span>,
-  <span class="c-prop">entrega</span>: <span class="c-str">"a tiempo"</span>
-});</code></pre>
-        </div>
-        <div class="float-card fc-1">🚀 Web en 5 días</div>
-        <div class="float-card fc-2">⚡ SaaS</div>
-        <div class="float-card fc-3">🔌 APIs</div>
       </div>
     </div>
   </section>
 
-  <!-- ===== OFERTA DESTACADA ===== -->
-  <section class="offer-band">
-    <div class="container offer-inner">
-      <div class="offer-text">
-        <span class="offer-badge">⚡ Oferta destacada</span>
-        <h2>Tu sitio web a medida, listo en <span class="offer-num">5 días</span>.</h2>
-        <p>Diseño profesional, responsive y optimizado — sin plantillas genéricas y a un precio que te va a sorprender.</p>
+  <!-- ===== MARQUEE ===== -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track mono">
+      <span>desarrollo web</span><i>✦</i><span>saas</span><i>✦</i><span>apps</span><i>✦</i><span>apis</span><i>✦</i><span>landings</span><i>✦</i><span>ux/ui</span><i>✦</i><span>automatización</span><i>✦</i>
+      <span>desarrollo web</span><i>✦</i><span>saas</span><i>✦</i><span>apps</span><i>✦</i><span>apis</span><i>✦</i><span>landings</span><i>✦</i><span>ux/ui</span><i>✦</i><span>automatización</span><i>✦</i>
+    </div>
+  </div>
+
+  <!-- ===== OFERTA ===== -->
+  <section class="section" id="oferta">
+    <div class="container offer frame reveal">
+      <div class="offer-price">
+        <p class="mono-eyebrow">// oferta · sitios web</p>
+        <p class="offer-desde mono">desde</p>
+        <p class="offer-usd">USD 700</p>
+        <p class="offer-plazo">online en <strong>&lt; 1 semana</strong></p>
       </div>
-      <div class="offer-cta">
-        <a href="#contacto" class="btn btn-white">Quiero mi sitio →</a>
-        <span class="offer-note">Entrega express · Precio accesible</span>
+      <div class="offer-detail">
+        <h2>Tu web profesional, sin vueltas.</h2>
+        <p>Nada de plantillas genéricas: diseñamos y desarrollamos tu sitio a medida, con todo lo que necesita para salir a vender.</p>
+        <ul class="checks">
+          <li>Diseño 100% a medida, responsive</li>
+          <li>Optimizada para Google (SEO) y veloz</li>
+          <li>Botón de WhatsApp y formulario de contacto</li>
+          <li>Dominio, hosting y puesta online incluidos en el proceso</li>
+        </ul>
+        <div class="offer-actions">
+          <a href="https://wa.me/59894630463?text=Hola%20Focusoft%2C%20quiero%20mi%20web%20desde%20USD%20700" target="_blank" rel="noopener" class="btn btn-primary">Quiero mi web</a>
+          <span class="mono offer-note">respuesta en el día</span>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== SERVICIOS ===== -->
-  <section class="section" id="servicios">
+  <!-- ===== PROCESO ===== -->
+  <section class="section section-line" id="proceso">
     <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">Qué hacemos</span>
-        <h2>Servicios</h2>
-        <p>Cubrimos todo el ciclo de vida de tu producto, desde la idea hasta el mantenimiento.</p>
+      <div class="section-head reveal">
+        <p class="mono-eyebrow">// proceso</p>
+        <h2>De la idea a estar online en 7 días</h2>
+        <p>Un proceso corto y claro: sabés qué pasa cada día y cuándo tenés tu web funcionando.</p>
       </div>
-      <div class="grid grid-3">
-        <article class="card">
-          <div class="card-icon">&lt;/&gt;</div>
+      <ol class="steps">
+        <li class="step reveal">
+          <span class="step-day mono">Día 1</span>
+          <h3>Brief &amp; propuesta</h3>
+          <p>Hablamos por WhatsApp o mail, entendemos tu negocio y te pasamos precio cerrado en el día.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step-day mono">Días 2–3</span>
+          <h3>Diseño</h3>
+          <p>Diseñamos tu sitio a medida y te lo mostramos para ajustar lo que quieras.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step-day mono">Días 4–6</span>
+          <h3>Desarrollo</h3>
+          <p>Lo construimos: responsive, veloz y optimizado para Google desde el primer día.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step-day mono">Día 7</span>
+          <h3>Online 🚀</h3>
+          <p>Publicamos tu web en tu dominio, lista para recibir clientes.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===== SERVICIOS (bento) ===== -->
+  <section class="section section-line" id="servicios">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="mono-eyebrow">// servicios</p>
+        <h2>Todo el ciclo de tu producto</h2>
+        <p>Desde la primera idea hasta el mantenimiento, con foco en calidad y resultados.</p>
+      </div>
+      <div class="bento">
+        <article class="cell cell-web reveal">
+          <svg class="cell-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="8 7 3 12 8 17"/><polyline points="16 7 21 12 16 17"/><line x1="13.5" y1="5" x2="10.5" y2="19"/></svg>
           <h3>Desarrollo web</h3>
-          <p>Sitios y aplicaciones web modernas, rápidas y escalables con las últimas tecnologías.</p>
+          <p>Sitios y aplicaciones web modernas, rápidas y escalables. Nuestra especialidad — y la puerta de entrada de la mayoría de nuestros clientes.</p>
+          <span class="chip mono">desde USD 700 · 7 días</span>
         </article>
-        <article class="card">
-          <div class="card-icon">🧩</div>
+        <article class="cell reveal">
+          <svg class="cell-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 22 8.5 12 15 2 8.5"/><polyline points="2 14 12 20.5 22 14"/></svg>
           <h3>Productos SaaS</h3>
-          <p>Plataformas propias y a medida con modelo de suscripción, listas para escalar.</p>
+          <p>Plataformas con modelo de suscripción, listas para escalar.</p>
         </article>
-        <article class="card">
-          <div class="card-icon">⚙️</div>
+        <article class="cell reveal">
+          <svg class="cell-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h.01a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51h.01a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v.01a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
           <h3>Software a medida</h3>
-          <p>Sistemas de gestión, ERPs y automatizaciones diseñados para tu proceso de negocio.</p>
+          <p>Sistemas de gestión, ERPs y automatizaciones para tu proceso.</p>
         </article>
-        <article class="card">
-          <div class="card-icon">🔌</div>
+        <article class="cell reveal">
+          <svg class="cell-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 7V2M15 7V2M6 7h12v6a6 6 0 0 1-12 0z"/><path d="M12 19v3"/></svg>
           <h3>APIs &amp; integraciones</h3>
-          <p>APIs robustas y seguras que conectan tus sistemas y facilitan cada proceso.</p>
+          <p>APIs robustas y seguras que conectan tus sistemas.</p>
         </article>
-        <article class="card">
-          <div class="card-icon">📱</div>
+        <article class="cell reveal">
+          <svg class="cell-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 3 14h7l-1 8 10-12h-7z"/></svg>
           <h3>Landings &amp; eventos</h3>
-          <p>Landings personalizadas de alto impacto para campañas y eventos puntuales.</p>
+          <p>Landings de alto impacto para campañas y eventos puntuales.</p>
         </article>
-        <article class="card">
-          <div class="card-icon">🎨</div>
+        <article class="cell reveal">
+          <svg class="cell-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18z"/><circle cx="11" cy="11" r="2"/></svg>
           <h3>Producto &amp; UX/UI</h3>
-          <p>Diseño de interfaces claras y experiencias que tus clientes disfrutan usar.</p>
+          <p>Interfaces claras y experiencias que tus clientes disfrutan.</p>
         </article>
       </div>
     </div>
   </section>
 
   <!-- ===== PROYECTOS ===== -->
-  <section class="section section-dark" id="proyectos">
+  <section class="section section-line" id="proyectos">
     <div class="container">
-      <div class="section-head light">
-        <span class="eyebrow">En qué trabajamos</span>
-        <h2>Proyectos reales</h2>
-        <p>No solo hablamos de software: lo construimos. Esto es una muestra de lo que estamos desarrollando.</p>
+      <div class="section-head reveal">
+        <p class="mono-eyebrow">// proyectos</p>
+        <h2>No solo lo decimos: lo construimos</h2>
+        <p>Una muestra de los productos que estamos desarrollando y comercializando.</p>
       </div>
 
       <div class="projects">
-        <!-- RestoYa -->
-        <article class="project feature">
-          <div class="project-shot">
-            <img src="assets/restoya.png" alt="RestoYa" loading="lazy" />
-          </div>
+        <article class="project reveal">
+          <div class="project-shot"><img src="assets/restoya.png" alt="RestoYa" loading="lazy" /></div>
           <div class="project-body">
             <div class="project-tags"><span class="tag green">Producto propio</span><span class="tag">SaaS · Suscripción</span></div>
             <h3>RestoYa</h3>
-            <p>Punto de venta inteligente para restaurantes: gestión de mesas, comandas y cobros desde cualquier dispositivo. Nuestro producto propio, que comercializamos por suscripción.</p>
-            <a href="https://restoya.app/" target="_blank" rel="noopener" class="project-link">Visitar restoya.app →</a>
+            <p>Punto de venta inteligente para restaurantes: gestión de mesas, comandas y cobros desde cualquier dispositivo.</p>
+            <span class="project-status mono">🚀 en comercialización</span>
           </div>
         </article>
 
-        <!-- Kore -->
-        <article class="project feature reverse">
-          <div class="project-shot">
-            <img src="assets/kore.png" alt="Kore" loading="lazy" />
-          </div>
+        <article class="project reverse reveal">
+          <div class="project-shot"><img src="assets/kore.png" alt="Kore" loading="lazy" /></div>
           <div class="project-body">
             <div class="project-tags"><span class="tag blue">Gestión empresarial</span><span class="tag">Plataforma</span></div>
             <h3>Kore</h3>
-            <p>Plataforma de gestión inteligente para empresas operativas: dashboard en tiempo real, gestión de flota y personal, y control total de la operación en un solo lugar.</p>
-            <a href="https://kore-azure-kappa.vercel.app/login" target="_blank" rel="noopener" class="project-link">Ver Kore →</a>
+            <p>Plataforma de gestión inteligente para empresas operativas: dashboard en tiempo real, flota, personal y control total de la operación.</p>
+            <span class="project-status mono">🔒 proyecto privado en desarrollo</span>
           </div>
         </article>
 
-        <!-- Small cards -->
-        <div class="grid grid-2 projects-mini">
-          <article class="project mini">
-            <div class="mini-icon">🏛️</div>
-            <div class="project-tags"><span class="tag">En curso</span></div>
-            <h3>Landings para eventos</h3>
-            <p>Desarrollamos landings personalizadas para eventos puntuales junto a entidades públicas y privadas. Proyectos en curso que anunciaremos próximamente.</p>
+        <div class="projects-mini">
+          <article class="cell reveal">
+            <h3>🏛️ Landings para eventos</h3>
+            <p>Landings personalizadas para eventos junto a entidades públicas y privadas. Proyectos en curso que anunciaremos próximamente.</p>
           </article>
-          <article class="project mini">
-            <div class="mini-icon">🔌</div>
-            <div class="project-tags"><span class="tag">Infraestructura</span></div>
-            <h3>APIs &amp; Micromanagement</h3>
-            <p>Construimos APIs y herramientas de micromanagement para automatizar y facilitar procesos internos de nuestros clientes.</p>
+          <article class="cell reveal">
+            <h3>🔌 APIs &amp; micromanagement</h3>
+            <p>APIs y herramientas internas que automatizan y facilitan procesos de nuestros clientes.</p>
           </article>
         </div>
       </div>
@@ -190,13 +215,11 @@
   </section>
 
   <!-- ===== NOSOTROS ===== -->
-  <section class="section" id="nosotros">
+  <section class="section section-line" id="nosotros">
     <div class="container about">
-      <div class="about-visual">
-        <img src="Focusoft-icon.svg" alt="" />
-      </div>
-      <div class="about-copy">
-        <span class="eyebrow">Nosotros</span>
+      <div class="about-visual reveal"><img src="Focusoft-icon-dark.svg" alt="Focusoft" /></div>
+      <div class="about-copy reveal">
+        <p class="mono-eyebrow">// nosotros</p>
         <h2>Foco. Software. Resultados.</h2>
         <p>
           Focusoft nace en Uruguay con una idea simple: el software bien hecho necesita
@@ -204,23 +227,23 @@
           personas que van a usar lo que construimos.
         </p>
         <ul class="checks">
-          <li>Productos propios en el mercado, no solo teoría.</li>
-          <li>Código mantenible y estándares modernos.</li>
-          <li>Compromiso con los plazos y con el resultado.</li>
+          <li>Productos propios en el mercado, no solo teoría</li>
+          <li>Código mantenible y estándares modernos</li>
+          <li>Compromiso con los plazos y con el resultado</li>
         </ul>
       </div>
     </div>
   </section>
 
   <!-- ===== CONTACTO ===== -->
-  <section class="section cta-section" id="contacto">
-    <div class="hero-blob blob-c"></div>
-    <div class="container cta-inner">
-      <h2>¿Tenés una idea o proyecto?</h2>
-      <p>Contanos qué necesitás y te respondemos a la brevedad.</p>
+  <section class="section section-line cta-section" id="contacto">
+    <div class="container cta-inner reveal">
+      <p class="mono-eyebrow">// contacto</p>
+      <h2>¿Arrancamos?</h2>
+      <p>Tu web desde <strong>USD 700</strong>, online en menos de 1 semana. Contanos qué necesitás y te respondemos en el día.</p>
       <div class="cta-actions">
-        <a href="mailto:hola@focusoft.uy" class="btn btn-primary">✉️ hola@focusoft.uy</a>
-        <a href="https://wa.me/598" target="_blank" rel="noopener" class="btn btn-outline light">💬 WhatsApp</a>
+        <a href="https://wa.me/59894630463?text=Hola%20Focusoft%2C%20quiero%20información%20sobre%20sus%20servicios" target="_blank" rel="noopener" class="btn btn-primary">💬 Escribinos por WhatsApp</a>
+        <a href="mailto:operaciones@focusoft.com.uy?subject=Consulta%20de%20servicios%20-%20Focusoft" class="btn btn-ghost">✉️ operaciones@focusoft.com.uy</a>
       </div>
     </div>
   </section>
@@ -228,17 +251,32 @@
   <!-- ===== FOOTER ===== -->
   <footer class="site-footer">
     <div class="container footer-inner">
-      <img src="Focusoft-horizontal-dark.svg" alt="Focusoft" class="footer-logo" />
-      <p class="footer-tag">Desarrollo de software · Uruguay</p>
+      <a href="#top" class="brand-word">Focu<span>soft</span></a>
+      <p class="footer-tag mono">desarrollo de software · uruguay 🇺🇾</p>
       <div class="footer-links">
+        <a href="#oferta">Oferta</a>
+        <a href="#proceso">Proceso</a>
         <a href="#servicios">Servicios</a>
         <a href="#proyectos">Proyectos</a>
         <a href="#nosotros">Nosotros</a>
         <a href="#contacto">Contacto</a>
       </div>
-      <p class="copy">© 2026 Focusoft. Todos los derechos reservados.</p>
+      <p class="copy mono">© 2026 focusoft · todos los derechos reservados</p>
     </div>
   </footer>
+
+  <!-- ===== WhatsApp floating widget ===== -->
+  <a
+    href="https://wa.me/59894630463?text=Hola%20Focusoft%2C%20quiero%20información%20sobre%20sus%20servicios"
+    class="wa-float"
+    target="_blank"
+    rel="noopener"
+    aria-label="Contactar por WhatsApp"
+  >
+    <svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true">
+      <path fill="#fff" d="M16.04 3.2c-7.1 0-12.86 5.76-12.86 12.86 0 2.27.6 4.48 1.72 6.43L3.2 28.8l6.5-1.68a12.8 12.8 0 0 0 6.33 1.62h.01c7.1 0 12.86-5.76 12.86-12.86 0-3.44-1.34-6.67-3.77-9.1a12.78 12.78 0 0 0-9.09-3.78Zm0 23.34h-.01a10.66 10.66 0 0 1-5.43-1.49l-.39-.23-4.02 1.05 1.07-3.92-.25-.4a10.62 10.62 0 0 1-1.63-5.67c0-5.9 4.8-10.7 10.7-10.7 2.86 0 5.54 1.11 7.56 3.14a10.62 10.62 0 0 1 3.13 7.57c0 5.9-4.8 10.7-10.7 10.7Zm5.87-8.01c-.32-.16-1.9-.94-2.2-1.05-.29-.11-.5-.16-.72.16-.21.32-.82 1.05-1.01 1.26-.19.21-.37.24-.69.08-.32-.16-1.36-.5-2.59-1.6-.96-.85-1.6-1.91-1.79-2.23-.19-.32-.02-.5.14-.66.14-.14.32-.37.48-.56.16-.19.21-.32.32-.53.11-.21.05-.4-.03-.56-.08-.16-.72-1.74-.99-2.38-.26-.62-.52-.54-.72-.55l-.61-.01c-.21 0-.56.08-.85.4-.29.32-1.11 1.09-1.11 2.66 0 1.57 1.14 3.09 1.3 3.3.16.21 2.25 3.43 5.44 4.81.76.33 1.35.52 1.81.67.76.24 1.46.21 2.01.13.61-.09 1.9-.78 2.17-1.53.27-.75.27-1.39.19-1.53-.08-.13-.29-.21-.61-.37Z"/>
+    </svg>
+  </a>
 
   <script src="script.js"></script>
 </body>
