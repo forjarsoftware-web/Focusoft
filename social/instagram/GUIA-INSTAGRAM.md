@@ -12,6 +12,9 @@
 | `avatar.png` | Foto de perfil | 1080×1080 (IG la recorta circular — la F ya está centrada con margen seguro) |
 | `post-lanzamiento.png` | Primera publicación del feed | 1080×1080 |
 | `historia-lanzamiento.png` | Primera historia | 1080×1920 (con zonas seguras arriba/abajo para la UI de IG) |
+| `historia-servicios.png` | Historia para la destacada "Servicios" | 1080×1920 |
+| `historia-proyectos.png` | Historia para la destacada "Proyectos" | 1080×1920 |
+| `historia-contacto.png` | Historia para la destacada "Contacto" | 1080×1920 |
 | `hl-oferta.png` | Portada destacada "⚡ Oferta" | 1080×1080 |
 | `hl-servicios.png` | Portada destacada "Servicios" | 1080×1080 |
 | `hl-proyectos.png` | Portada destacada "Proyectos" | 1080×1080 |
@@ -91,12 +94,14 @@ sitios web, apps y sistemas a medida.
 2. Editá la destacada → **Editar portada** → subí `hl-oferta.png`.
 3. Repetí a medida que subas historias de cada tema:
 
-| Destacada | Portada | Contenido sugerido |
+| Destacada | Historia a subir | Portada |
 |---|---|---|
-| ⚡ Oferta | `hl-oferta.png` | Precio, plazos, qué incluye |
-| Servicios | `hl-servicios.png` | Web, SaaS, apps, APIs |
-| Proyectos | `hl-proyectos.png` | RestoYa, Kore (sin links), capturas |
-| Contacto | `hl-contacto.png` | WhatsApp, mail, cómo cotizar |
+| ⚡ Oferta | `historia-lanzamiento.png` | `hl-oferta.png` |
+| Servicios | `historia-servicios.png` | `hl-servicios.png` |
+| Proyectos | `historia-proyectos.png` | `hl-proyectos.png` |
+| Contacto | `historia-contacto.png` | `hl-contacto.png` |
+
+> Tip: no subas las 4 historias el mismo minuto — repartilas en los primeros 2–3 días. Cada historia se destaca con **Destacar (♡)** y después le asignás su portada. En `historia-contacto.png` y `historia-lanzamiento.png` agregá el sticker de link al WhatsApp.
 
 ---
 
